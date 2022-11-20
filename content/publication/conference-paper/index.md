@@ -1,20 +1,22 @@
 ---
-title: 'An example conference paper'
+title: 'Smooth Kronecker: Solving the Combing Problem in Kronecker Graphs'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Vaastav Anand
   - admin
-  - Robert Ford
+  - Daniel Margo
+  - Margo Seltzer
 
 # Author notes (optional)
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+date: '2020-07-06T18:07:29-07:00'
+doi: "https://doi.org/10.1145/3398682.3399161"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -26,15 +28,15 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Wowchemy Conference*
-publication_short: In *ICW*
+publication: 
+publication_short: 
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Graphs and graph-processing have become increasingly important. This has led to an explosion in the development of graph-processing systems, each of which is evaluated relative to its predecessors. In the absence of a large corpus of real-world graphs, synthetic generators provide an easy way to construct graphs of varying sizes. The most widely used generator is the Kronecker generator. Unfortunately, the Kronecker generator was not designed to produce graphs for benchmarking and when used in this fashion, it is problematic in two ways. First, the fraction of zero-degree vertices scales with the graph size, dramatically reducing the effective size of the connected graph. Second, the generator produces a vertex degree distribution not found in real world settings. We demonstrate these phenomena and present the Smooth Kronecker Generator, which remedies the vertex degree distribution problem without changing the statistical properties of the graph
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Fixing the combed degree distribution in Kronecker graphs
 
-tags: []
+tags: [graph generators, kronecker, benchmarking, graph]
 
 # Display this page in the Featured widget?
 featured: true
@@ -45,13 +47,13 @@ featured: true
 #   url: http://example.org
 
 url_pdf: ''
-url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_code: 'https://github.com/dmargo/smooth_kron_gen'
+url_dataset: ''
 url_poster: ''
 url_project: ''
-url_slides: ''
-url_source: 'https://github.com/wowchemy/wowchemy-hugo-themes'
-url_video: 'https://youtube.com'
+url_slides: 'GRADES-SmoothKronecker.pdf'
+url_source: ''
+url_video: 'https://www.youtube.com/watch?v=5G75VpX9pZs'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -60,28 +62,11 @@ image:
   focal_point: ''
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects:
-  - example
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+slides: ""
 ---
-
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).

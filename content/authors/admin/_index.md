@@ -10,7 +10,7 @@ last_name: Mehrotra
 superuser: true
 
 # Role/position/tagline
-role: PhD student | Coffee Drinker Meme Connoiseur
+role: PhD student | Coffee Drinker <br>Meme Connoiseur
 
 # Organizations/Affiliations to show in About widget
 organizations:

@@ -78,7 +78,7 @@ features:
     provider: ''
     disqus:
       shortname: ''
-      show_count: true
+      show_count: false
     commento:
       url: ''
     giscus:
@@ -100,12 +100,12 @@ features:
 
 # Extensions
 
-extensions:
-  cms:
-    branch: main
-    local_backend: false
-  academicons:
-    enable: true
+# extensions:
+#   cms:
+#     branch: main
+#     local_backend: false
+#   academicons:
+#     enable: true
 
 # Security
 
